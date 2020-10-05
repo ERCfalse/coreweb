@@ -1,0 +1,29 @@
+<div class="container">
+    <div>{{userName}}</div>
+    <h1>File Upload in Node.js</h1>
+    <form method="post" action="127.0.0.1:7000/upload" enctype="multipart/form-data">
+      <input name="filedata" (change)="handleLogoFileInput($event.target.files)" id="filesToUpload" type="file" />
+      <button type="submit" (click)="send()" class="submit-btn">Submit</button>
+    </form>
+  </div>
+  <button (click)="openDialog()">Open dialog</button>
+
+ <div *ngFor="let item of company">
+   {{item.name}}
+ </div>
+
+ <button (click)="startGis()">StartGisUpload</button>
+
+ <div *ngIf="result && result != 'error'">
+   RESULT:
+   <div *ngFor="let item of result">
+     {{item.house.apartmentHouse.basicCharacteristicts.fiashouseGuid}}
+     <p>COUT {{item.accounts.length}}</p>
+     <div *ngFor="let account of item.accounts">
+             Number {{account.accountNumber}} Famaly {{account.payerInfo.ind.surname}}  
+            <div *ngIf="account.isCRAccount; then thenBlock else elseBlock"></div>   
+            <ng-template #thenBlock> cap </ng-template>  
+            <ng-template #elseBlock>not cap</ng-template>
+     </div>
+     </div>
+ </div>

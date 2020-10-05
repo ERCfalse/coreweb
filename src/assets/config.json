@@ -1,0 +1,8 @@
+{
+    "authJwt": "http://127.0.0.1:7000/api/auth",
+    "wsUrl": "ws://127.0.0.1:3001",
+    "uploadUrl":"http://127.0.0.1:7000/upload",
+    "authJwt_core": "http://89.108.82.118:31055/jwt_se/jjwt",
+    "userUrl":"http://127.0.0.1:7000/user",
+    "gisUrl":"http://127.0.0.1:7000/gis"
+}

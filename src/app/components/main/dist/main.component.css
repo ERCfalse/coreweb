@@ -1,0 +1,57 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainRowContainer {
+  display: flex;
+  flex-direction: row;
+  flex: 0 1 auto;
+}
+
+.uprow {
+  height: 8vh;
+  flex: 0 1 auto;
+  background-color: blue;
+}
+
+.left {
+  width: 8vw;
+  height: 92vh;
+  flex: 0 1 auto;
+  background-color: red;
+}
+
+.right {
+  height: 92vh;
+  width: 92vw;
+  flex: 0 1 auto;
+  background-color: yellow;
+}
+
+.logo {
+  height: 25px;
+  display: inline-block;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 1vw;
+}
+
+.rightUp {
+  display: inline-block;
+  float: right;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 1vw;
+  vertical-aligment: center;
+}
+
+.userPic {
+  height: 25px;
+  display: inline-block;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-right: 1vw;
+}
